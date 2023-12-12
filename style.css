@@ -1,0 +1,166 @@
+/* Applies Montserrat font, removes default margin and padding, and sets a background color for the entire page */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #00AEEF;
+}
+
+/* Styles for the header element, setting its background color, padding, and position */
+.header {
+    background-color: #FFFFFF;
+    color: #fff;
+    padding: 15px 0;
+    position: relative;
+}
+
+/* Container for header elements with a max-width, auto margin for centering, flex display for alignment, and background color */
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0px;
+    background-color: #FFFFFF;
+    position: relative;
+}
+
+/* Absolute positioning of the logo to the left side */
+.logo {
+    position: absolute;
+    left: 0px;
+}
+
+/* Styles for the logo image, setting its width and height */
+.logo img {
+    width: 160px;
+    height: auto;
+}
+
+/* Styles for the main content area, using flex for layout */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-left: auto;
+    padding-left: 50px;
+}
+
+/* Styling for icons in the top right of the header, with flex alignment and ordering */
+.top-right-icons {
+    order: -1;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* Styles for anchor elements in top-right-icons, setting color, margin, and text-decoration */
+.top-right-icons a {
+    color: #00AEEF;
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+/* Inherit color for icons within anchor tags */
+.top-right-icons a i {
+    color: inherit;
+}
+
+/* Remove right margin for the last icon */
+.top-right-icons a:last-child {
+    margin-right: 0;
+}
+
+/* Styling for the main menu, using flex for layout and setting background color */
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding-top: 10px;
+    align-self: flex-end;
+    background-color: #FFFFFF;
+}
+
+/* Styles for individual menu items, positioning, and right margin */
+.menu li {
+    margin-right: 40px;
+    position: relative;
+}
+
+/* Styles for anchor tags in menu items, setting color, text-decoration, and padding */
+.menu li a {
+    color: #000;
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+/* Removes right margin for the last menu item */
+.menu li:last-child {
+    margin-right: 0;
+}
+
+/* Styles for the submenu, initially hidden, positioned absolutely, and other styling properties for appearance */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-80%);
+    background-color: #FFFFFF;
+    padding: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+/* Placeholder for additional styles for submenu items */
+.submenu-item {
+    position: relative;
+}
+
+/* Styles for the list inside the submenu, using flex for layout */
+.submenu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Styles for list items in the submenu, setting padding and border */
+.submenu ul li {
+    padding: 10px 15px;
+    border-right: 1px solid #000000;
+}
+
+/* Removes border for the last list item in submenu */
+.submenu ul li:last-child {
+    border-right: none;
+}
+
+/* Styles for anchor tags inside submenu, setting color, text-decoration, and display property */
+.submenu a {
+    color: #000;
+    text-decoration: none;
+    display: block;
+}
+
+/* Styles for the close button in the submenu, including size, color, positioning, and other visual properties */
+.close-button {
+    font-size: 24px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    box-shadow: 0 0 0 4px #fff;
+    z-index: 2;
+}
